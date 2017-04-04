@@ -1,6 +1,6 @@
 # emojiClock
 
-A node package for giving you an emoji clock for the current hour.
+🕒 A node package for giving you emoji clocks.
 
 ## Install
 ```bash
@@ -11,13 +11,9 @@ npm install emojiclock
 ```javascript
 var emojiClock = require('emojiclock')
 
-var clock = emojiClock.now() // Let's say it's 18:37
-console.log(clock + " DING DONG") // 🕕 DING DONG
-```
+var now = emojiClock.now() // Let's say it's 18:37
+console.log(now + "  DING DONG") // 🕕 DING DONG
 
-If you just want a specific clock you can currently do the following:
-
-```javascript
-emojiClock.now(true, 7) // 🕖
-emojiClock.now(true, 1) // 🕐
+var time = emojiClock.get(3)
+console.log(time + "  TICK TOCK") // 🕒 DING DONG
 ```
