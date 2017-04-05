@@ -34,8 +34,6 @@ var clock = emojiclock.get(3) // 24hr support, i.e. 15 also works
 console.log(clock + "  TICK TOCK: Something happened") // 🕒 TICK TOCK: Something happened
 ```
 
-`hour`= Number()
-
 ### emojiclock.time(time)
 
 Returns a clock emoji for a given timestamp or `Date()` object:
