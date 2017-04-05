@@ -41,5 +41,9 @@ describe('emojiclock', function() {
       var result = emojiclock.time(time)
       assert.equal(result, "🕗")
     })
+    it("should give me an error for providing a boolean as time", function() {
+      var result = emojiclock.time(true)
+      assert.equal(result, "Invalid time")
+    })
   })
 })
